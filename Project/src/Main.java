@@ -27,10 +27,10 @@ public class Main {
         llista.add(forn1);
         llista.add(forn2);
 
-        /*Forn anotherForn = (Forn) forn1.clone();
+        Forn anotherForn = (Forn) forn1.clone();
         llistaCopy.add(anotherForn);
         Forn anotherForn1 = (Forn) forn2.clone();
-        llistaCopy.add(anotherForn1);*/
+        llistaCopy.add(anotherForn1);
 
         Nevera nevera1 = new Nevera();
         nevera1.nom = "MAionesa";
@@ -51,10 +51,10 @@ public class Main {
         nevera2.preu = 15;
         llista.add(nevera2);
 
-        /*Nevera anotherNevera = (Nevera) nevera1.clone();
+        Nevera anotherNevera = (Nevera) nevera1.clone();
         llistaCopy.add(anotherNevera);
         Nevera anotherNevera1 = (Nevera) nevera2.clone();
-        llistaCopy.add(anotherNevera1);*/
+        llistaCopy.add(anotherNevera1);
         
 
         Rentadora rentadora1 = new Rentadora();
@@ -76,14 +76,14 @@ public class Main {
         rentadora2.preu = 18;
         llista.add(rentadora2);
 
-        /*Rentadora anotherRentadora = (Rentadora) rentadora1.clone();
+        Rentadora anotherRentadora = (Rentadora) rentadora1.clone();
         llistaCopy.add(anotherRentadora);
         Rentadora anotherRentadora1 = (Rentadora) rentadora2.clone();
-        llistaCopy.add(anotherRentadora1);*/
+        llistaCopy.add(anotherRentadora1);
 
-        for (Electrodomestic obj : llista) {
+        /*for (Electrodomestic obj : llista) {
             llistaCopy.add(obj.clone());
-        }
+        }*/
         System.out.println("Comparar la mateixa llista:");
         for (int i = 0; i < llista.size(); i++) {
             compare(i, llista.get(i), llista.get(i));
